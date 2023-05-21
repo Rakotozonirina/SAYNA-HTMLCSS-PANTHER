@@ -35,6 +35,7 @@
   position: relative;
 }
 
+/*aside styles*/
 .hero-page .icons {
   width: 100px;
   border: 1px solid #FFFFFF;
@@ -76,6 +77,109 @@
 
 .hero-page .icons .line-two .below img {
   margin: 0.1em 0;
+}
+
+/*nav styles*/
+nav {
+  border: 1px solid #FFFFFF;
+  display: flex;
+  width: 100%;
+  height: 6rem;
+  justify-content: space-between;
+}
+
+nav .logos {
+  border: 1px solid #07338C;
+  width: 12%;
+  height: inherit;
+  margin: 0 140px;
+  display: flex;
+  place-items: center;
+}
+
+nav .liens {
+  border: 1px solid #07338C;
+  width: 30%;
+  height: inherit;
+  margin: 0 100px;
+}
+
+nav .liens ul {
+  border: 1px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+  height: inherit;
+}
+
+nav .liens ul li:nth-child(1) h2 a {
+  text-decoration: underline;
+  color: #9E91B7;
+}
+
+nav .liens ul li h2 {
+  font-family: BEYNO;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+nav .liens ul li h2 a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/*Hero styles*/
+.hero {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid #FFFFFF;
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
+.hero article {
+  border: 1px solid #FFFFFF;
+  padding: 9em 8.5em;
+}
+
+.hero article h1 {
+  color: #9E91B7;
+  font-family: Panthera;
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.hero article h2 {
+  color: #9E91B7;
+  font-family: BEYNO;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.hero article p {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 1.2em 0;
+}
+
+.hero article a {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.hero .pic-hero {
+  border: 1px solid #FFFFFF;
+}
+
+.hero .pic-hero img {
+  max-inline-size: 100%;
+  block-size: auto;
 }
 
 /*responsive*/
