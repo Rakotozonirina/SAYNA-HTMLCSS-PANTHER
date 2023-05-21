@@ -49,7 +49,7 @@ $Wakanda: Wakanda;
 }
 .hero-panther{
     width: 100%;
-    height: 200vh;
+    height: 400vh;
     background: url(../IllustrationLogosAcceuil/Logos/arrière_plan.png) no-repeat center center/cover;
 }
 .hero-page{
@@ -168,6 +168,103 @@ nav .liens ul li h2 a{
     font-size: $FontSizeText;
 }
 .hero .pic-hero img{
+    max-inline-size: 100%;
+    block-size: auto;
+}
+/*Slide styles*/
+.slide-hero{
+    width: 100%;
+    height: 19rem;
+    padding-left: 8.5em;
+    position: relative;
+}
+.slide-hero button{
+    width: 2.1em;
+    height: 2em;
+    z-index: 99;
+    position: absolute;
+    border-radius: 50%;
+    border: none;
+    background-color: $darkBlue;
+    color: $white;
+    font-family: $Cantarell;
+    font-size: $FontSizeTitreH2Responsive;
+    cursor: pointer;
+    top: 40%;
+    right: 3%;
+}
+.slide-hero .wakanda-hero{
+    width: 100%;
+    height: inherit;
+    display: grid;
+    grid-template-columns: 24% 20% 20% 20% 16%;
+    background-color: $darkBlue;
+}
+.slide-hero .wakanda-hero .one{
+    width: 100%;
+    height: inherit;
+}
+.slide-hero .wakanda-hero .one img{
+    max-inline-size: 100%;
+    block-size: auto;
+    transform: scale(1.1);
+}
+.slide-hero .wakanda-hero .two{
+    width: 100%;
+    height: inherit;
+}
+.slide-hero .wakanda-hero .two article{
+    padding-left: 1.5em;
+    padding-top: 2em;
+}
+.slide-hero .wakanda-hero .two article h2{
+    color: $lightViolet;
+    font-family: $Beyno;
+}
+.slide-hero .wakanda-hero .two article p{
+    color: $white;
+    font-family: $Cantarell;
+    font-size: $FontSizeCitation;
+    margin: 0.5em 0;
+}
+.slide-hero .wakanda-hero .two article a{
+    color: $white;
+    font-family: $Cantarell;
+}
+.slide-hero .wakanda-hero .three{
+    width: 100%;
+    height: inherit;
+}
+.slide-hero .wakanda-hero .three img{
+    max-inline-size: 100%;
+    block-size: auto;
+}
+.slide-hero .wakanda-hero .four{
+    width: 100%;
+    height: inherit;
+}
+.slide-hero .wakanda-hero .four article{
+    padding: 2em 1em;
+}
+.slide-hero .wakanda-hero .four article h2{
+    color: $lightViolet;
+    font-family: $Beyno;
+}
+.slide-hero .wakanda-hero .four article p{
+    color: $white;
+    font-family: $Cantarell;
+    font-size: $FontSizeCitation;
+    margin: 0.5em 0;
+}
+.slide-hero .wakanda-hero .four article a{
+    color: $white;
+    font-family: $Cantarell;
+}
+.slide-hero .wakanda-hero .five{
+    width: 100%;
+    height: inherit;
+}
+.slide-hero .wakanda-hero .five img{
     max-inline-size: 100%;
     block-size: auto;
 }
