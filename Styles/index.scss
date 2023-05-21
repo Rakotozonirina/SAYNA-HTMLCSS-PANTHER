@@ -11,3 +11,31 @@ $darkBlue: #021740;
 /*Les Fonts*/
 
 $Cantarell:'Cantarell', sans-serif;
+$Regular: 400;
+$FontSizeText: 16px;
+$FontSizeCitation: 14px;
+$FontSizeFooter: 10px;
+$FontSizeTitreH1: 68px;
+$FontSizeTitreH2: 32px;
+$FontSizeTitreH2Enigme: 43px;
+$Panthera: Panthera;
+$Beyno: BEYNO;
+$Wakanda: Wakanda;
+
+/*l' ajout des fonts télécharger*/
+
+@font-face{
+    font-family: Panthera;
+    src: url(../IllustrationLogosAcceuil/Fonts/PantheraRegular-MVZ9J.ttf);
+    font-weight: $Regular;
+}
+@font-face{
+    font-family: BEYNO;
+    src: url(../IllustrationLogosAcceuil/Fonts/BEYNO.otf);
+    font-weight: $Regular;
+}
+@font-face{
+    font-family: Wakanda;
+    src: url(../IllustrationLogosAcceuil/Fonts/WakandaForever-Regular.ttf);
+    font-weight: $Regular;
+}
