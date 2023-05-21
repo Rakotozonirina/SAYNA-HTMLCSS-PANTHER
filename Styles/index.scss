@@ -39,3 +39,60 @@ $Wakanda: Wakanda;
     src: url(../IllustrationLogosAcceuil/Fonts/WakandaForever-Regular.ttf);
     font-weight: $Regular;
 }
+/*Les codes en géneral*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.hero-panther{
+    width: 100%;
+    height: 200vh;
+    background: url(../IllustrationLogosAcceuil/Logos/arrière_plan.png) no-repeat center center/cover;
+}
+.hero-page{
+    position: relative;
+}
+.hero-page .icons{
+    width: 100px;
+    border: 1px solid $white;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+.hero-page .icons .line-one{
+    width: 8px;
+    height: inherit;
+    background-color: $lightViolet;
+}
+.hero-page .icons .line-two{
+    width: 50px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-page .icons .line-two .above{
+    height: 280px;
+    width: 8px;
+    background-color: $lightViolet;
+}
+.hero-page .icons .line-two .below{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-page .icons .line-two .below img{
+    margin: 0.1em 0;
+}
+
+
+/*responsive*/
+@media screen and (max-width: 768px){
+
+}
