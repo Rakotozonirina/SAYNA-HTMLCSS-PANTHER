@@ -166,6 +166,10 @@ nav .liens ul li h2 a {
   font-size: 16px;
 }
 
+.hero .pic-hero {
+  z-index: 1;
+}
+
 .hero .pic-hero img {
   max-inline-size: 100%;
   block-size: auto;
@@ -311,7 +315,7 @@ nav .liens ul li h2 a {
     height: 130vh;
   }
   .hero-panther {
-    height: 400vh;
+    height: 600vh;
   }
   .hero article {
     padding: 6em;
@@ -327,6 +331,44 @@ nav .liens ul li h2 a {
   }
   .hero article a {
     font-size: 14px;
+  }
+  .slide-hero {
+    padding-left: 0;
+    height: 100rem;
+  }
+  .slide-hero .wakanda-hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .slide-hero .wakanda-hero .one {
+    display: flex;
+    justify-content: center;
+  }
+  .slide-hero .wakanda-hero .one img {
+    transform: scale(1);
+  }
+  .slide-hero .wakanda-hero .two article {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .slide-hero .wakanda-hero .two {
+    padding: 1.5em;
+  }
+  .slide-hero .wakanda-hero .three {
+    padding: 0 1.5em;
+  }
+  .slide-hero .wakanda-hero .four {
+    padding: 1.5em;
+  }
+  .slide-hero .wakanda-hero .four article {
+    padding: 0;
+  }
+  .slide-hero .wakanda-hero .five {
+    padding: 0 1.5em;
+  }
+  .slide-hero button {
+    top: 88%;
+    right: 54%;
   }
 }
 
