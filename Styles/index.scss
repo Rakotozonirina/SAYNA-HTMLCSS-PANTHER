@@ -47,6 +47,9 @@ $Wakanda: Wakanda;
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: $darkBlue;
+}
 .hero-panther{
     width: 100%;
     height: 550vh;
@@ -415,7 +418,98 @@ nav .liens ul li h2 a{
 .descriptions .desc-hero .prince-panther div{
     margin-top: 16rem;
 }
-
+/*contact*/
+.back-contact{
+    background: url(../IllustrationLogosAcceuil/Illustration/Pantherhome7.png) no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0 0 80px $darkBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-contact form{
+    width: 60%;
+    height: 80vh;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.back-contact form p{
+    font-family: $Cantarell;
+    font-weight: $Regular;
+    font-size: $FontSizeText;
+    text-align: center;
+    margin-top: 3em;
+    color: $darkBlue;
+}
+.back-contact form h1{
+    font-family: $Cantarell;
+    font-weight: $Regular;
+    font-size: 250%;
+    text-align: center;
+    color: $darkBlue;
+}
+.back-contact form .contact{
+    width: 520px;
+    height: 52vh;
+}
+.back-contact form .contact .contact-form{
+    display: flex;
+    flex-direction: column;
+}
+.back-contact form .contact .contact-form input{
+    width: 100%;
+    height: 56px;
+    margin-top: 0.6em;
+    border-radius: 38px;
+    border: 1.5px solid $darkBlue;
+    outline: none;
+    background-color: transparent;
+    font-family: $Cantarell;
+    font-size: $FontSizeText;
+    text-indent: 1em;
+}
+.back-contact form .contact .contact-form textarea{
+    width: 100%;
+    height: 120px;
+    border-radius: 38px;
+    margin-top: 1.2em;
+    border: 1.5px solid $darkBlue;
+    outline: none;
+    background-color: transparent;
+    font-family: $Cantarell;
+    font-size: $FontSizeText;
+    color: $darkBlue;
+    resize: none;
+    padding: 1em;
+}
+.back-contact form .contact .btn{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.back-contact form .contact .btn button{
+    width: 174px;
+    height: 54px;
+    border-radius: 38px;
+    margin-top: 1.2em;
+    border: none;
+    font-family: $Cantarell;
+    font-size: $FontSizeText;
+    color: $darkBlue;
+    background-color: $lightRose;
+    outline: none;
+    font-weight: bold;
+    transition: box-shadow 3s ease;
+    &:hover{
+        box-shadow: 0 0 20px $darkBlue;
+        cursor: pointer;
+    }
+}
 /*responsive*/
 @media screen and (max-width: 768px){
     nav{
@@ -539,6 +633,30 @@ nav .liens ul li h2 a{
         padding: 1.5em;
     }
     .descriptions .more-desc .art-three p{
+        font-size: $FontSizeCitation;
+    }
+    .back-contact{
+        background: url(../IllustrationLogosAcceuil/Illustration/Pantherhome7.png) no-repeat center center/contain;
+    }
+    .back-contact form{
+        width: 80%;
+    }
+    .back-contact form p{
+        font-size: $FontSizeCitation;
+    }
+    .back-contact form h1{
+        font-size: $FontSizeTitreH2;
+    }
+    .back-contact form .contact{
+        width: 90%;
+    }
+    .back-contact form .contact .contact-form input{
+        font-size: $FontSizeCitation;
+    }
+    .back-contact form .contact .contact-form textarea{
+        font-size: $FontSizeCitation;
+    }
+    .back-contact form .contact .btn button{
         font-size: $FontSizeCitation;
     }
 }
