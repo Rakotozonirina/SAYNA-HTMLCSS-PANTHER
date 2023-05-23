@@ -27,7 +27,7 @@
 
 .hero-panther {
   width: 100%;
-  height: 400vh;
+  height: 550vh;
   background: url(../IllustrationLogosAcceuil/Logos/arrière_plan.png) no-repeat center center/cover;
 }
 
@@ -291,6 +291,176 @@ nav .liens ul li h2 a {
   block-size: auto;
 }
 
+/*Styles Descriptions*/
+.descriptions {
+  width: 100%;
+  height: 350vh;
+  display: flex;
+}
+
+.descriptions .more-desc {
+  display: grid;
+  grid-template-rows: 28rem 28rem 28rem;
+  align-content: space-around;
+}
+
+.descriptions .more-desc .art-one {
+  padding-left: 8.5em;
+  padding-right: 4em;
+}
+
+.descriptions .more-desc .art-one h2 {
+  color: #9E91B7;
+  font-weight: 400;
+  font-family: BEYNO;
+  font-size: 24px;
+}
+
+.descriptions .more-desc .art-one p {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 1.2em 0;
+}
+
+.descriptions .more-desc .art-two {
+  padding-left: 8.5em;
+  padding-right: 4em;
+}
+
+.descriptions .more-desc .art-two h2 {
+  color: #9E91B7;
+  font-weight: 400;
+  font-family: BEYNO;
+  font-size: 24px;
+}
+
+.descriptions .more-desc .art-two p {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 1.2em 0;
+}
+
+.descriptions .more-desc .art-three {
+  padding-left: 8.5em;
+  padding-right: 4em;
+}
+
+.descriptions .more-desc .art-three h2 {
+  color: #9E91B7;
+  font-weight: 400;
+  font-family: BEYNO;
+  font-size: 24px;
+}
+
+.descriptions .more-desc .art-three p {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 1.2em 0;
+}
+
+.descriptions .desc-hero {
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.descriptions .desc-hero .prince {
+  display: grid;
+  align-items: center;
+}
+
+.descriptions .desc-hero .prince .desc-prince {
+  position: relative;
+  width: 80%;
+  height: 40rem;
+  background-color: #FFFFFF;
+  border-radius: 38px;
+  box-shadow: 0px 0px 20px #021740;
+  display: flex;
+  align-items: center;
+  margin-top: 16em;
+}
+
+.descriptions .desc-hero .prince .desc-prince .pic-prince {
+  width: 80%;
+  position: absolute;
+  top: -36%;
+  left: 10%;
+}
+
+.descriptions .desc-hero .prince .desc-prince .pic-prince img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+.descriptions .desc-hero .prince .desc-prince .who-prince {
+  margin-top: 12em;
+}
+
+.descriptions .desc-hero .prince .desc-prince .who-prince article h2 {
+  font-family: "Cantarell", sans-serif;
+  font-size: 24px;
+  color: #021740;
+  text-align: center;
+  margin: 0.4em 0;
+}
+
+.descriptions .desc-hero .prince .desc-prince .who-prince article .contenus-boutons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+}
+
+.descriptions .desc-hero .prince .desc-prince .who-prince article .contenus-boutons button {
+  padding: 1em;
+  border: none;
+  color: #FFFFFF;
+  background-color: #3D2DA6;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0 0.4em;
+}
+
+.descriptions .desc-hero .prince .desc-prince .who-prince article ul {
+  list-style-type: none;
+  padding: 0 3em;
+}
+
+.descriptions .desc-hero .prince .desc-prince .who-prince article ul li {
+  margin: 0.5em 0;
+}
+
+.descriptions .desc-hero .prince .desc-prince .who-prince article ul li p {
+  color: #021740;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.descriptions .desc-hero .prince .desc-prince .who-prince article ul li p span {
+  font-weight: bold;
+}
+
+.descriptions .desc-hero .prince .desc-prince .who-prince article ul li p .tiny {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.descriptions .desc-hero .prince-panther {
+  display: flex;
+  align-items: center;
+}
+
+.descriptions .desc-hero .prince-panther div {
+  margin-top: 16rem;
+}
+
 /*responsive*/
 @media screen and (max-width: 768px) {
   nav {
@@ -315,7 +485,7 @@ nav .liens ul li h2 a {
     height: 130vh;
   }
   .hero-panther {
-    height: 600vh;
+    height: 1100vh;
   }
   .hero article {
     padding: 6em;
@@ -369,6 +539,52 @@ nav .liens ul li h2 a {
   .slide-hero button {
     top: 88%;
     right: 54%;
+  }
+  .descriptions {
+    flex-direction: column-reverse;
+    height: 600vh;
+  }
+  .descriptions .desc-hero .prince {
+    display: flex;
+    justify-content: center;
+  }
+  .descriptions .desc-hero .prince-panther div {
+    margin: 1.5rem 0;
+  }
+  .descriptions .desc-hero .prince-panther div img {
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+  .descriptions .desc-hero .prince .desc-prince .who-prince article {
+    margin-bottom: 4em;
+  }
+  .descriptions .desc-hero .prince .desc-prince .who-prince article ul li p {
+    font-size: 14px;
+  }
+  .descriptions .desc-hero .prince .desc-prince .who-prince article ul li p span {
+    font-size: 14px;
+  }
+  .descriptions .more-desc {
+    display: flex;
+    flex-direction: column;
+  }
+  .descriptions .more-desc .art-one {
+    padding: 1.5em;
+  }
+  .descriptions .more-desc .art-one p {
+    font-size: 14px;
+  }
+  .descriptions .more-desc .art-two {
+    padding: 1.5em;
+  }
+  .descriptions .more-desc .art-two p {
+    font-size: 14px;
+  }
+  .descriptions .more-desc .art-three {
+    padding: 1.5em;
+  }
+  .descriptions .more-desc .art-three p {
+    font-size: 14px;
   }
 }
 
