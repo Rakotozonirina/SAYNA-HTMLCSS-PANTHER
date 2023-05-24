@@ -106,9 +106,9 @@ main .hero{
     background: url(../IllustrationLogosWakanda/Illustrations/Pantherwakanda1.png) no-repeat center center/cover;
 }
 main .hero article{
-    border: 2px solid $white;
     width: 72%;
     height: 70vh;
+    padding-right: 22em;
 }
 main .hero article h1{
     color: $lightViolet;
@@ -120,7 +120,7 @@ main .hero article h2{
     color: $lightViolet;
     font-family: $Wakanda;
     font-weight: $Regular;
-    font-size: $FontSizeTitreH2;
+    font-size: $FontSizeTitreH2Enigme;
 }
 main .hero article p{
     color: $white;
@@ -149,5 +149,18 @@ main .hero article p{
     header nav .liens ul{
         flex-direction: column;
         height: 12rem;
+    }
+    main .hero article{
+        padding-right: 0;
+    }
+    main .hero article h1{
+        font-size: $FontSizeTitreH2;
+    }
+    main .hero article h2{
+        font-size: $FontSizeTitreH2Responsive;
+        margin: 1em 0;
+    }
+    main .hero article p{
+        font-size: $FontSizeCitation;
     }
 }

@@ -99,9 +99,9 @@ main .hero {
 }
 
 main .hero article {
-  border: 2px solid #FFFFFF;
   width: 72%;
   height: 70vh;
+  padding-right: 22em;
 }
 
 main .hero article h1 {
@@ -115,7 +115,7 @@ main .hero article h2 {
   color: #9E91B7;
   font-family: Wakanda;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 43px;
 }
 
 main .hero article p {
@@ -146,6 +146,19 @@ main .hero article p {
   header nav .liens ul {
     flex-direction: column;
     height: 12rem;
+  }
+  main .hero article {
+    padding-right: 0;
+  }
+  main .hero article h1 {
+    font-size: 32px;
+  }
+  main .hero article h2 {
+    font-size: 24px;
+    margin: 1em 0;
+  }
+  main .hero article p {
+    font-size: 14px;
   }
 }
 
