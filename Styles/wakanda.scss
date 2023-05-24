@@ -44,7 +44,7 @@ $Wakanda: Wakanda;
     padding: 0;
 }
 body{
-    background-color: $darkBlue;
+    background: url(../IllustrationLogosWakanda/Logos/arrière_plan.png) no-repeat center center/cover;
 }
 /*Header styles*/
 header{
@@ -91,6 +91,18 @@ header nav .liens ul li h2 a{
     text-decoration: none;
     color: $white;
 }
+main{
+    width: 100%;
+    height: 400vh;
+    border: 1px solid $white;
+}
+main .hero{
+    width: 99.6%;
+    height: 100vh;
+    border: 2px solid $lightRose;
+    margin: 0 0.2em;
+    background: url(../IllustrationLogosWakanda/Illustrations/Pantherwakanda1.png) no-repeat center center/cover;
+}
 /*Responsive*/
 @media screen and (max-width: 768px){
     header{
@@ -111,5 +123,8 @@ header nav .liens ul li h2 a{
     header nav .liens ul{
         flex-direction: column;
         height: 12rem;
+    }
+    main .hero{
+        background: url(../IllustrationLogosWakanda/Illustrations/Pantherwakanda1.png) no-repeat center center/contain;
     }
 }
