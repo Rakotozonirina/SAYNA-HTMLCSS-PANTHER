@@ -326,6 +326,7 @@ nav .liens ul li h2 a {
   font-size: 16px;
   font-weight: 400;
   margin: 1.2em 0;
+  text-align: justify;
 }
 
 .descriptions .more-desc .art-two {
@@ -346,6 +347,7 @@ nav .liens ul li h2 a {
   font-size: 16px;
   font-weight: 400;
   margin: 1.2em 0;
+  text-align: justify;
 }
 
 .descriptions .more-desc .art-three {
@@ -366,6 +368,7 @@ nav .liens ul li h2 a {
   font-size: 16px;
   font-weight: 400;
   margin: 1.2em 0;
+  text-align: justify;
 }
 
 .descriptions .desc-hero {
