@@ -1,3 +1,108 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&display=swap");
+/*Les Codes couleurs*/
+/*Les Fonts*/
+/*l' ajout des fonts télécharger*/
+@font-face {
+  font-family: Panthera;
+  src: url(../IllustrationLogosWakanda/Fonts/PantheraRegular-MVZ9J.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: BEYNO;
+  src: url(../IllustrationLogosWakanda/Fonts/BEYNO.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Wakanda;
+  src: url(../IllustrationLogosWakanda/Fonts/WakandaForever-Regular.ttf);
+  font-weight: 400;
+}
+/*style base*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background-color: #021740;
+}
+
+/*Header styles*/
+header {
+  width: 100%;
+  height: 20vh;
+  background: url(../IllustrationLogosWakanda/Logos/arrière_plan.png) no-repeat center center/cover;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: inherit;
+}
+
+header nav .logos {
+  width: 12%;
+  height: 6rem;
+  margin: 0 140px;
+  display: flex;
+  place-items: center;
+}
+
+header nav .liens {
+  width: 30%;
+  height: 6rem;
+  margin: 0 100px;
+}
+
+header nav .liens ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+  height: inherit;
+}
+
+header nav .liens ul li:nth-child(2) h2 a {
+  text-decoration: underline;
+  color: #9E91B7;
+}
+
+header nav .liens ul li h2 {
+  font-family: BEYNO;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+header nav .liens ul li h2 a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/*Responsive*/
+@media screen and (max-width: 768px) {
+  header {
+    height: 100vh;
+  }
+  header nav {
+    flex-direction: column;
+    height: 28rem;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav .logos {
+    margin: 0;
+  }
+  header nav .liens {
+    margin: 0;
+  }
+  header nav .liens ul {
+    flex-direction: column;
+    height: 12rem;
+  }
+}
 
 /*# sourceMappingURL=wakanda.css.map */
