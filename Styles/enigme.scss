@@ -46,12 +46,6 @@ $Wakanda: Wakanda;
 body{
     background: url(../IllustrationLogosEnigme/Logos/arrière_plan.png) no-repeat center center/cover;
 }
-.head{
-    width: 100%;
-    height: 100vh;
-    box-shadow: inset 0 0 200px $darkBlue;
-    background: url(../IllustrationLogosEnigme/Illustrations/Pantherenigme1.png) no-repeat left center/contain;
-}
 /*header styles*/
 header nav{
     display: flex;
@@ -92,6 +86,53 @@ header nav .liens ul li h2 a{
     text-decoration: none;
     color: $white;
 }
+main{
+    width: 100%;
+    background: url(../IllustrationLogosEnigme/Logos/arrière_plan.png) no-repeat center center/cover;
+}
+.head{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: inset 0 0 200px $darkBlue;
+    background: url(../IllustrationLogosEnigme/Illustrations/Pantherenigme1.png) no-repeat left center/contain;
+}
+.head .desc{
+    width: 46%;
+    height: 80vh;
+}
+.head .desc article h1{
+    font-family: $Beyno;
+    font-size: $FontSizeTitreH1Responsive;
+    font-weight: $Regular;
+    color: $lightViolet;
+}
+.head .desc .circle{
+    width: 100%;
+    height: 46vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: url(../IllustrationLogosEnigme/Illustrations/Pantherenigme2.png) no-repeat center center/contain;
+}
+.head .desc .circle article{
+    width: 70%;
+    height: 26vh;
+}
+.head .desc .circle article p{
+    font-family: $Cantarell;
+    font-size: $FontSizeCitation;
+    font-weight: $Regular;
+    color: $white;
+    text-align: justify;
+}
+.head .desc .line-picture{
+    width: 100%;
+    height: 10vh;
+    background: url(../IllustrationLogosEnigme/Illustrations/Pantherenigme3.png) no-repeat center center/contain;
+}
 @media screen and (max-width: 768px){
     header nav{
         flex-direction: column;
@@ -108,5 +149,28 @@ header nav .liens ul li h2 a{
     header nav .liens ul{
         flex-direction: column;
         height: 12rem;
+    }
+    main{
+        height: 250vh;
+    }
+    .head{
+        justify-content: flex-end;
+        align-items: flex-start;
+        position: relative;
+    }
+    .head .desc{
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+    }
+    .head .desc article h1{
+        font-size: $FontSizeTitreH2Responsive;
+        margin: 1em;
+    }
+    .head .desc .circle article{
+        margin: 0;
+        width: 90%;
     }
 }
