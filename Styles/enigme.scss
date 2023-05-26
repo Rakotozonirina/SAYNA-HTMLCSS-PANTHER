@@ -133,6 +133,33 @@ main{
     height: 10vh;
     background: url(../IllustrationLogosEnigme/Illustrations/Pantherenigme3.png) no-repeat center center/contain;
 }
+.more-desc{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid $white;
+    position: relative;
+}
+.more-desc .first{
+    border: 1px solid $white;
+    width: 100%;
+    height: 20vh;
+}
+.more-desc .first h2{
+    font-family: $Wakanda;
+    font-size: $FontSizeTitreH2Enigme;
+    color: $lightViolet;
+    font-weight: $Regular;
+}
+.more-desc .second p{
+    font-family: $Cantarell;
+    font-size: $FontSizeText;
+    color: $white;
+    font-weight: $Regular;
+}
+.more-desc .second p span{
+    font-family: $Wakanda;
+    text-transform: uppercase;
+}
 @media screen and (max-width: 768px){
     header nav{
         flex-direction: column;
