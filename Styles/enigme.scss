@@ -135,14 +135,15 @@ main{
 }
 .more-desc{
     width: 100%;
-    height: 100vh;
-    border: 1px solid $white;
+    height: 120vh;
     position: relative;
+    display: grid;
+    align-content: center;
 }
 .more-desc .first{
-    border: 1px solid $white;
     width: 100%;
     height: 20vh;
+    padding-left: 140px;
 }
 .more-desc .first h2{
     font-family: $Wakanda;
@@ -150,15 +151,100 @@ main{
     color: $lightViolet;
     font-weight: $Regular;
 }
+.more-desc .second{
+    margin: 2.5em 0;
+    padding-left: 140px;
+    width: 100%;
+    height: 20vh;
+}
 .more-desc .second p{
     font-family: $Cantarell;
     font-size: $FontSizeText;
     color: $white;
     font-weight: $Regular;
 }
-.more-desc .second p span{
+.more-desc .second p.para-second{
+    margin: 1.5em 0;
+}
+.more-desc .second p.para-second span{
     font-family: $Wakanda;
     text-transform: uppercase;
+}
+.more-desc form{
+    width: 100%;
+    height: 40vh;
+    padding-left: 140px;
+}
+.more-desc form div{
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+}
+.more-desc form div label{
+    font-family: $Cantarell;
+    font-size: $FontSizeText;
+    color: $white;
+    font-weight: $Regular;
+    margin: 1.5em 0;
+}
+.more-desc form div input[type="text"]{
+    width: 100%;
+    height: 56px;
+    border-radius: 38px;
+    background-color: transparent;
+    font-family: $Cantarell;
+    font-size: $FontSizeText;
+    color: $lightRose;
+    font-weight: $Regular;
+    text-indent: 1em;
+    border-color: $lightRose;
+    outline: none;
+}
+.more-desc form .bouton{
+    width: 520px;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.more-desc form .bouton button{
+    width: 30%;
+    height: 56px;
+    border-radius: 38px;
+    border: none;
+    outline: none;
+    background-color: $lightRose;
+    color: $darkBlue;
+    font-family: $Cantarell;
+    font-size: $FontSizeText;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.more-desc .circle-pic{
+    width: 46%;
+    height: 50vh;
+    position: absolute;
+    top: 30%;
+    right: 0%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: url(../IllustrationLogosEnigme/Illustrations/Pantherenigme2.png) no-repeat center center/contain;
+}
+.more-desc .circle-pic article{
+    width: 70%;
+    height: 26vh;
+}
+.more-desc .circle-pic article p{
+    font-family: $Cantarell;
+    font-size: $FontSizeCitation;
+    font-weight: $Regular;
+    color: $white;
+    text-align: center;
+}
+.more-desc .circle-pic article .two{
+    margin: 1em 0;
 }
 @media screen and (max-width: 768px){
     header nav{
@@ -178,7 +264,7 @@ main{
         height: 12rem;
     }
     main{
-        height: 250vh;
+        height: 450vh;
     }
     .head{
         justify-content: flex-end;
@@ -199,5 +285,46 @@ main{
     .head .desc .circle article{
         margin: 0;
         width: 90%;
+    }
+    .more-desc{
+        width: 100%;
+        height: 300vh;
+    }
+    .more-desc .first{
+        padding: 1em;
+    }
+    .more-desc .first h2{
+        font-size: $FontSizeTitreH2Responsive;
+    }
+    .more-desc form div{
+        width: 100%;
+    }
+    .more-desc form div label{
+        font-size: $FontSizeCitation;
+    }
+    .more-desc form div input[type="text"]{
+        font-size: $FontSizeCitation;
+    }
+    .more-desc form .bouton{
+        width: 100%;
+    }
+    .more-desc form .bouton button{
+        font-size: $FontSizeCitation;
+    }
+    .more-desc .second{
+        padding: 1em;
+        height: 30vh;
+    }
+    .more-desc form{
+        padding: 1em;
+    }
+    .more-desc .circle-pic{
+        position: relative;
+    }
+    .more-desc .second p{
+        font-size: $FontSizeCitation;
+    }
+    .more-desc .circle-pic{
+        width: 100%;
     }
 }
