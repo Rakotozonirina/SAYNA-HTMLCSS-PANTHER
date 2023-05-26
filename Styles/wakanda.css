@@ -256,6 +256,123 @@ main .hero article p {
   background: url(../IllustrationLogosWakanda/Illustrations/Pantherwakanda2-1.png) no-repeat center center/cover;
 }
 
+/*footer*/
+footer {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../IllustrationLogosWakanda/Logos/back_footer.png) no-repeat center center/cover;
+}
+
+footer .contenus-footer {
+  width: 70%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+footer .contenus-footer .contenus-cercle {
+  width: 30%;
+  height: 44vh;
+  position: relative;
+  background: url(../IllustrationLogosWakanda/Logos/footer1.png) no-repeat center center/contain;
+}
+
+footer .contenus-footer .contenus-cercle img {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+
+footer .contenus-footer .desc-footer {
+  width: 70%;
+  height: 44vh;
+}
+
+footer .contenus-footer .desc-footer .first {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 32vh;
+}
+
+footer .contenus-footer .desc-footer .first article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .contenus-footer .desc-footer .first article h2 {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.6em;
+}
+
+footer .contenus-footer .desc-footer .first article ul {
+  list-style-type: none;
+  margin-right: 2em;
+}
+
+footer .contenus-footer .desc-footer .first article ul li {
+  margin: 0.8em 0;
+}
+
+footer .contenus-footer .desc-footer .first article ul li p {
+  font-size: 16px;
+  font-family: "Cantarell", sans-serif;
+  text-transform: capitalize;
+}
+
+footer .contenus-footer .desc-footer .first article ul li p a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+footer .contenus-footer .desc-footer .first .cont-icons h2 {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.6em;
+}
+
+footer .contenus-footer .desc-footer .first .cont-icons div {
+  margin-top: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer .contenus-footer .desc-footer .first .cont-icons div img {
+  margin: 0 0.8em;
+}
+
+footer .contenus-footer .desc-footer .seconds {
+  display: flex;
+  align-items: center;
+}
+
+footer .contenus-footer .desc-footer .seconds p {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+footer .contenus-footer .desc-footer .seconds #one {
+  margin-left: 4.8em;
+}
+
+footer .contenus-footer .desc-footer .seconds div {
+  width: 0.3em;
+  height: 0.3em;
+  background-color: #F2CEF2;
+  margin: 0 0.2em;
+  border-radius: 50px;
+}
+
 /*Responsive*/
 @media screen and (max-width: 768px) {
   header {
@@ -279,6 +396,7 @@ main .hero article p {
   }
   main {
     height: 800vh;
+    width: 100%;
   }
   main .hero article {
     padding-right: 0;
@@ -331,6 +449,44 @@ main .hero article p {
   }
   .art-two .two .seconds p {
     font-size: 14px;
+  }
+  footer .contenus-footer {
+    width: 80%;
+    flex-direction: column;
+  }
+  footer .contenus-footer .desc-footer {
+    width: 100%;
+  }
+  footer .contenus-footer .desc-footer .first {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .contenus-footer .desc-footer .first article h2 {
+    font-size: 14px;
+  }
+  footer .contenus-footer .desc-footer .first article ul {
+    margin: 0;
+  }
+  footer .contenus-footer .desc-footer .first article ul li p {
+    font-size: 14px;
+  }
+  footer .contenus-footer .desc-footer .first .cont-icons h2 {
+    font-size: 14px;
+  }
+  footer .contenus-footer .desc-footer .first .cont-icons div img {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 0.4em;
+  }
+  footer .contenus-footer .desc-footer .seconds {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .contenus-footer .desc-footer .seconds #one {
+    margin: 0 2em;
   }
 }
 
