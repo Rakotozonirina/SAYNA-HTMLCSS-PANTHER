@@ -84,8 +84,7 @@ header nav .liens ul li h2 a {
 
 main {
   width: 100%;
-  height: 400vh;
-  border: 1px solid #FFFFFF;
+  height: 480vh;
   display: flex;
   flex-direction: column;
   background: url(../IllustrationLogosWakanda/Illustrations/Pantherwakanda2.png) no-repeat center center/contain;
@@ -182,29 +181,78 @@ main .hero article p {
 
 .art-two {
   width: 100%;
-  border: 1px solid #FFFFFF;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 200vh;
+  height: 300vh;
+  gap: 4em;
 }
 
 .art-two .one {
-  border: 1px solid #FFFFFF;
+  padding-top: 4em;
+  padding-left: 140px;
 }
 
 .art-two .one video {
-  width: 30vw;
+  width: 100%;
   height: 40vh;
 }
 
+.art-two .one article h2 {
+  color: #9E91B7;
+  font-family: BEYNO;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.art-two .one article p {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 1.2em 0;
+  text-align: justify;
+}
+
 .art-two .two {
-  border: 1px solid #FFFFFF;
+  padding-top: 4em;
+  padding-right: 140px;
+}
+
+.art-two .two .first h2 {
+  color: #9E91B7;
+  font-family: BEYNO;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.art-two .two .first p {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 1.2em 0;
+  text-align: justify;
+}
+
+.art-two .two .seconds h2 {
+  color: #9E91B7;
+  font-family: BEYNO;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.art-two .two .seconds p {
+  color: #FFFFFF;
+  font-family: "Cantarell", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 1.2em 0;
+  text-align: justify;
 }
 
 .art-two .two .pic-post {
   width: 100%;
   height: 50vh;
-  border: 2px solid #FFFFFF;
   background: url(../IllustrationLogosWakanda/Illustrations/Pantherwakanda2-1.png) no-repeat center center/cover;
 }
 
@@ -230,7 +278,7 @@ main .hero article p {
     height: 12rem;
   }
   main {
-    height: 400vh;
+    height: 800vh;
   }
   main .hero article {
     padding-right: 0;
@@ -249,7 +297,7 @@ main .hero article p {
     display: flex;
     flex-direction: column;
     gap: 0;
-    height: 240vh;
+    height: auto;
   }
   .art-one .one {
     padding: 1em;
@@ -261,6 +309,27 @@ main .hero article p {
     padding: 1em;
   }
   .art-one .two p {
+    font-size: 14px;
+  }
+  .art-two {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    height: 320vh;
+  }
+  .art-two .one {
+    padding: 1em;
+  }
+  .art-two .two {
+    padding: 1em;
+  }
+  .art-two .one article p {
+    font-size: 14px;
+  }
+  .art-two .two .first p {
+    font-size: 14px;
+  }
+  .art-two .two .seconds p {
     font-size: 14px;
   }
 }
