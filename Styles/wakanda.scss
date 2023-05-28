@@ -14,7 +14,7 @@ $FontSizeText: 16px;
 $FontSizeCitation: 14px;
 $FontSizeFooter: 10px;
 $FontSizeTitreH1: 68px;
-$FontSizeTitreH1Responsive: 60px;
+$FontSizeTitreH1Responsive: 58px;
 $FontSizeTitreH2: 32px;
 $FontSizeTitreH2Responsive: 24px;
 $FontSizeTitreH2Enigme: 43px;
@@ -43,6 +43,9 @@ $Wakanda: Wakanda;
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: url(../IllustrationLogosWakanda/Logos/arrière_plan.png) no-repeat center center/cover;
 }
@@ -64,6 +67,10 @@ header nav .logos{
     margin: 0 140px;
     display: flex;
     place-items: center;
+    cursor: pointer;
+    &:hover{
+        filter: blur(1px);
+    }
 }
 header nav .liens{
     width: 30%;
@@ -91,6 +98,9 @@ header nav .liens ul li h2 a{
     text-decoration: none;
     color: $white;
 }
+header nav .liens ul li h2 a:hover{
+    text-decoration: underline;
+}
 main{
     width: 100%;
     height: 480vh;
@@ -112,13 +122,20 @@ main .hero article{
     height: 70vh;
     padding-right: 22em;
 }
-main .hero article h1{
+main .hero article .super-hero{
+    transition: all .3s ease-in-out;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+main .hero article .super-hero h1{
     color: $lightViolet;
     font-family: $Beyno;
     font-weight: $Regular;
     font-size: $FontSizeTitreH1Responsive;
 }
-main .hero article h2{
+main .hero article .super-hero h2{
     color: $lightViolet;
     font-family: $Wakanda;
     font-weight: $Regular;
@@ -260,6 +277,10 @@ footer .contenus-footer .contenus-cercle{
     width: 30%;
     height: 44vh;
     position: relative;
+    transition: all .3s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+    }
     background: url(../IllustrationLogosWakanda/Logos/footer1.png) no-repeat center center/contain;
 }
 footer .contenus-footer .contenus-cercle img{
@@ -302,6 +323,9 @@ footer .contenus-footer .desc-footer .first article ul li p{
 footer .contenus-footer .desc-footer .first article ul li p a{
     color: $white;
     text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
 }
 footer .contenus-footer .desc-footer .first .cont-icons h2{
     text-align: center;
@@ -367,10 +391,10 @@ footer .contenus-footer .desc-footer .seconds div{
     main .hero article{
         padding-right: 0;
     }
-    main .hero article h1{
+    main .hero article .super-hero h1{
         font-size: $FontSizeTitreH2;
     }
-    main .hero article h2{
+    main .hero article .super-hero h2{
         font-size: $FontSizeTitreH2Responsive;
         margin: 1em 0;
     }
