@@ -14,7 +14,7 @@ $FontSizeText: 16px;
 $FontSizeCitation: 14px;
 $FontSizeFooter: 10px;
 $FontSizeTitreH1: 68px;
-$FontSizeTitreH1Responsive: 60px;
+$FontSizeTitreH1Responsive: 58px;
 $FontSizeTitreH2: 32px;
 $FontSizeTitreH2Responsive: 24px;
 $FontSizeTitreH2Enigme: 43px;
@@ -43,6 +43,9 @@ $Wakanda: Wakanda;
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: url(../IllustrationLogosEnigme/Logos/arrière_plan.png) no-repeat center center/cover;
 }
@@ -59,6 +62,10 @@ header nav .logos{
     margin: 0 140px;
     display: flex;
     place-items: center;
+    cursor: pointer;
+    &:hover{
+        filter: blur(1px);
+    }
 }
 header nav .liens{
     width: 30%;
@@ -85,6 +92,9 @@ header nav .liens ul li h2{
 header nav .liens ul li h2 a{
     text-decoration: none;
     color: $white;
+}
+header nav .liens ul li h2 a:hover{
+    text-decoration: underline;
 }
 main{
     width: 100%;
@@ -141,8 +151,13 @@ main{
     align-content: center;
 }
 .more-desc .first{
-    width: 100%;
+    width: 80%;
     height: 20vh;
+    transition: all .3s ease-in-out;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
     padding-left: 140px;
 }
 .more-desc .first h2{
@@ -265,6 +280,10 @@ footer .contenus-footer .contenus-cercle{
     width: 30%;
     height: 44vh;
     position: relative;
+    transition: all .3s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+    }
     background: url(../IllustrationLogosEnigme/Logos/footer1.png) no-repeat center center/contain;
 }
 footer .contenus-footer .contenus-cercle img{
@@ -307,6 +326,9 @@ footer .contenus-footer .desc-footer .first article ul li p{
 footer .contenus-footer .desc-footer .first article ul li p a{
     color: $white;
     text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
 }
 footer .contenus-footer .desc-footer .first .cont-icons h2{
     text-align: center;

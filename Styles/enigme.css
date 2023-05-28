@@ -25,6 +25,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: url(../IllustrationLogosEnigme/Logos/arrière_plan.png) no-repeat center center/cover;
 }
@@ -43,6 +47,10 @@ header nav .logos {
   margin: 0 140px;
   display: flex;
   place-items: center;
+  cursor: pointer;
+}
+header nav .logos:hover {
+  filter: blur(1px);
 }
 
 header nav .liens {
@@ -76,6 +84,10 @@ header nav .liens ul li h2 a {
   color: #FFFFFF;
 }
 
+header nav .liens ul li h2 a:hover {
+  text-decoration: underline;
+}
+
 main {
   width: 100%;
   background: url(../IllustrationLogosEnigme/Logos/arrière_plan.png) no-repeat center center/cover;
@@ -98,7 +110,7 @@ main {
 
 .head .desc article h1 {
   font-family: BEYNO;
-  font-size: 60px;
+  font-size: 58px;
   font-weight: 400;
   color: #9E91B7;
 }
@@ -140,9 +152,14 @@ main {
 }
 
 .more-desc .first {
-  width: 100%;
+  width: 80%;
   height: 20vh;
+  transition: all 0.3s ease-in-out;
   padding-left: 140px;
+}
+.more-desc .first:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .more-desc .first h2 {
@@ -282,7 +299,11 @@ footer .contenus-footer .contenus-cercle {
   width: 30%;
   height: 44vh;
   position: relative;
+  transition: all 0.3s ease-in-out;
   background: url(../IllustrationLogosEnigme/Logos/footer1.png) no-repeat center center/contain;
+}
+footer .contenus-footer .contenus-cercle:hover {
+  transform: scale(1.1);
 }
 
 footer .contenus-footer .contenus-cercle img {
@@ -333,6 +354,9 @@ footer .contenus-footer .desc-footer .first article ul li p {
 footer .contenus-footer .desc-footer .first article ul li p a {
   color: #FFFFFF;
   text-decoration: none;
+}
+footer .contenus-footer .desc-footer .first article ul li p a:hover {
+  text-decoration: underline;
 }
 
 footer .contenus-footer .desc-footer .first .cont-icons h2 {
