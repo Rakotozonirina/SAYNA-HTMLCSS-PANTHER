@@ -25,6 +25,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #021740;
 }
@@ -42,7 +46,7 @@ body {
 /*aside styles*/
 .hero-page .icons {
   width: 100px;
-  height: 400px;
+  /*height: 400px;*/
   display: flex;
   justify-content: flex-end;
   position: fixed;
@@ -52,19 +56,37 @@ body {
 
 .hero-page .icons .line-one {
   width: 8px;
-  height: inherit;
+  height: 400px;
+  animation: lineOne 2s ease-in-out;
   background-color: #9E91B7;
 }
 
+@keyframes lineOne {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 400px;
+  }
+}
 .hero-page .icons .line-two {
   width: 50px;
-  height: inherit;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  animation: lineTwo 3s ease-in-out;
   align-items: center;
 }
 
+@keyframes lineTwo {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 400px;
+  }
+}
 .hero-page .icons .line-two .above {
   height: 280px;
   width: 8px;
@@ -98,6 +120,13 @@ nav .logos {
   place-items: center;
 }
 
+nav .logos img {
+  cursor: pointer;
+}
+nav .logos img:hover {
+  filter: blur(1px);
+}
+
 nav .liens {
   width: 30%;
   height: inherit;
@@ -116,6 +145,10 @@ nav .liens ul {
 nav .liens ul li:nth-child(1) h2 a {
   text-decoration: underline;
   color: #9E91B7;
+}
+
+nav .liens ul li h2 a:hover {
+  text-decoration: underline;
 }
 
 nav .liens ul li h2 {
@@ -141,14 +174,22 @@ nav .liens ul li h2 a {
   padding: 9em 8.5em;
 }
 
-.hero article h1 {
+.hero article .super-hero {
+  transition: all 0.3s ease-in-out;
+}
+.hero article .super-hero:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.hero article .super-hero h1 {
   color: #9E91B7;
   font-family: Panthera;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 58px;
 }
 
-.hero article h2 {
+.hero article .super-hero h2 {
   color: #9E91B7;
   font-family: BEYNO;
   font-weight: 400;
@@ -198,9 +239,14 @@ nav .liens ul li h2 a {
   color: #FFFFFF;
   font-family: "Cantarell", sans-serif;
   font-size: 24px;
-  cursor: pointer;
   top: 40%;
   right: 3%;
+  box-shadow: 0 0 10px #FFFFFF;
+  transition: all 0.3s ease-in-out;
+}
+.slide-hero button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px #FFFFFF;
 }
 
 .slide-hero .wakanda-hero {
@@ -592,6 +638,10 @@ footer .contenus-footer .contenus-cercle {
   height: 44vh;
   position: relative;
   background: url(../IllustrationLogosAcceuil/Logos/footer1.png) no-repeat center center/contain;
+  transition: all 0.3s ease-in-out;
+}
+footer .contenus-footer .contenus-cercle:hover {
+  transform: scale(1.1);
 }
 
 footer .contenus-footer .contenus-cercle img {
@@ -642,6 +692,9 @@ footer .contenus-footer .desc-footer .first article ul li p {
 footer .contenus-footer .desc-footer .first article ul li p a {
   color: #FFFFFF;
   text-decoration: none;
+}
+footer .contenus-footer .desc-footer .first article ul li p a:hover {
+  text-decoration: underline;
 }
 
 footer .contenus-footer .desc-footer .first .cont-icons h2 {
@@ -716,10 +769,10 @@ footer .contenus-footer .desc-footer .seconds div {
   .hero article {
     padding: 6em;
   }
-  .hero article h1 {
+  .hero article .super-hero h1 {
     font-size: 32px;
   }
-  .hero article h2 {
+  .hero article .super-hero h2 {
     font-size: 24px;
   }
   .hero article p {

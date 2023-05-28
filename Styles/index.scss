@@ -14,7 +14,7 @@ $FontSizeText: 16px;
 $FontSizeCitation: 14px;
 $FontSizeFooter: 10px;
 $FontSizeTitreH1: 68px;
-$FontSizeTitreH1Responsive: 60px;
+$FontSizeTitreH1Responsive: 58px;
 $FontSizeTitreH2: 32px;
 $FontSizeTitreH2Responsive: 24px;
 $FontSizeTitreH2Enigme: 43px;
@@ -43,6 +43,9 @@ $Wakanda: Wakanda;
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: $darkBlue;
 }
@@ -57,7 +60,7 @@ body{
 /*aside styles*/
 .hero-page .icons{
     width: 100px;
-    height: 400px;
+    /*height: 400px;*/
     display: flex;
     justify-content: flex-end;
     position: fixed;
@@ -66,16 +69,34 @@ body{
 }
 .hero-page .icons .line-one{
     width: 8px;
-    height: inherit;
+    height: 400px;
+    animation: lineOne 2s ease-in-out;
     background-color: $lightViolet;
+}
+@keyframes lineOne {
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 400px;
+    }
 }
 .hero-page .icons .line-two{
     width: 50px;
-    height: inherit;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation: lineTwo 3s ease-in-out;
     align-items: center;
+}
+@keyframes lineTwo {
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 400px;
+    }
 }
 .hero-page .icons .line-two .above{
     height: 280px;
@@ -105,6 +126,12 @@ nav .logos{
     display: flex;
     place-items: center;
 }
+nav .logos img{
+    cursor: pointer;
+    &:hover{
+        filter: blur(1px);
+    }
+}
 nav .liens{
     width: 30%;
     height: inherit;
@@ -121,6 +148,9 @@ nav .liens ul{
 nav .liens ul li:nth-child(1) h2 a{
     text-decoration: underline;
     color: $lightViolet;
+}
+nav .liens ul li h2 a:hover{
+    text-decoration: underline;
 }
 nav .liens ul li h2{
     font-family: $Beyno;
@@ -141,13 +171,20 @@ nav .liens ul li h2 a{
 .hero article{
     padding: 9em 8.5em;
 }
-.hero article h1{
+.hero article .super-hero{
+    transition: all .3s ease-in-out;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+.hero article .super-hero h1{
     color: $lightViolet;
     font-family: $Panthera;
     font-weight: $Regular;
     font-size: $FontSizeTitreH1Responsive;
 }
-.hero article h2{
+.hero article .super-hero h2{
     color: $lightViolet;
     font-family: $Beyno;
     font-weight: $Regular;
@@ -191,9 +228,14 @@ nav .liens ul li h2 a{
     color: $white;
     font-family: $Cantarell;
     font-size: $FontSizeTitreH2Responsive;
-    cursor: pointer;
     top: 40%;
     right: 3%;
+    box-shadow: 0 0 10px $white;
+    transition: all .3s ease-in-out;
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0 0 20px $white;
+    }
 }
 .slide-hero .wakanda-hero{
     width: 100%;
@@ -529,6 +571,10 @@ footer .contenus-footer .contenus-cercle{
     height: 44vh;
     position: relative;
     background: url(../IllustrationLogosAcceuil/Logos/footer1.png) no-repeat center center/contain;
+    transition: all .3s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 footer .contenus-footer .contenus-cercle img{
     position: absolute;
@@ -570,6 +616,9 @@ footer .contenus-footer .desc-footer .first article ul li p{
 footer .contenus-footer .desc-footer .first article ul li p a{
     color: $white;
     text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
 }
 footer .contenus-footer .desc-footer .first .cont-icons h2{
     text-align: center;
@@ -636,10 +685,10 @@ footer .contenus-footer .desc-footer .seconds div{
     .hero article{
         padding: 6em;
     }
-    .hero article h1{
+    .hero article .super-hero h1{
         font-size: $FontSizeTitreH2;
     }
-    .hero article h2{
+    .hero article .super-hero h2{
         font-size: $FontSizeTitreH2Responsive;
     }
     .hero article p{
